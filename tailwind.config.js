@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        serviceBg: "url('/src/assets/assets/home/chef-service.jpg')",
+      },
+    },
   },
   // eslint-disable-next-line no-undef
   plugins: [require("daisyui")],
