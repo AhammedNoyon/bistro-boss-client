@@ -5,7 +5,11 @@ export default {
     extend: {
       backgroundImage: {
         serviceBg: "url('/src/assets/assets/home/chef-service.jpg')",
+        featuredBg: "url('/src/assets/assets/home/featured.jpg')",
       },
+    },
+    dropShadow: {
+      featuredShadow: "rgba(21, 21, 21, 0.7)",
     },
   },
   // eslint-disable-next-line no-undef

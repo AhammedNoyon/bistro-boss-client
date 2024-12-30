@@ -6,6 +6,9 @@ const Navbar = () => {
       <li>
         <NavLink>Home</NavLink>
       </li>
+      <li>
+        <NavLink to="/ourMenu">Our Menu</NavLink>
+      </li>
     </>
   );
   return (

@@ -21,7 +21,7 @@ const Menu = () => {
           <div className="flex justify-between gap-x-8" key={singleMenu?._id}>
             <div className="h-32 w-32 ">
               <img
-                className="rounded-tr-[200px] rounded-b-[200px] "
+                className="rounded-tr-[200px] rounded-b-[200px] object-cover"
                 src={singleMenu?.image}
                 alt=""
               />
