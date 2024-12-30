@@ -1,6 +1,5 @@
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 const Cover = ({ coverImg, coverTitle, coverDesc }) => {
-  console.log(coverImg);
   return (
     <Parallax
       blur={{ min: -15, max: 15 }}
