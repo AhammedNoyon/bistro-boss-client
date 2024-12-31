@@ -2,7 +2,7 @@ const SharedMenu = ({ items }) => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-8 w-11/12 md:w-3/4 mx-auto">
-        {items.map((item) => (
+        {items.slice(0, 6).map((item) => (
           <div className="flex justify-between gap-x-8" key={item?._id}>
             <div className="h-32 w-32 ">
               <img
