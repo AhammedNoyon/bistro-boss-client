@@ -55,7 +55,9 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex mr-8">
           <ul className="menu menu-horizontal px-1">{menu}</ul>
         </div>
-        <Link className="">Login / register</Link>
+        <Link to="/login" className="">
+          Login
+        </Link>
         <div className="dropdown dropdown-end hidden">
           <div
             tabIndex={0}

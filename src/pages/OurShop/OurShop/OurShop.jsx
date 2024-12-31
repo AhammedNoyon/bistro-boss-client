@@ -2,8 +2,11 @@ import { Helmet } from "react-helmet-async";
 import Cover from "../../../Shared/Cover/Cover";
 import coverImg from "../../../assets/assets/shop/banner2.jpg";
 import ShopTab from "../ShopTab/ShopTab";
+import { useParams } from "react-router-dom";
 
 const OurShop = () => {
+  const { category } = useParams();
+  // console.log(category);
   return (
     <>
       <Helmet>

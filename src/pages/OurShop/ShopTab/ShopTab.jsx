@@ -3,9 +3,13 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import useMenu from "../../../hooks/useMenu";
 import CategoryTabPanel from "../../../Shared/CategoryTabPanel/CategoryTabPanel";
+import { useParams } from "react-router-dom";
 
 const ShopTab = () => {
-  const [tabIndex, setTabIndex] = useState(0);
+  const categories = ["offered", "Salad", "pizza", "soup", "dessert", "drinks"];
+  const { category } = useParams();
+  const initialIndex = categories.indexOf(category);
+  const [tabIndex, setTabIndex] = useState(initialIndex);
 
   //load data for panel wise
   const [menu] = useMenu();
@@ -26,7 +30,7 @@ const ShopTab = () => {
       <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
         <div className="w-fit mx-auto mt-10 md:mt-20">
           <TabList>
-            <Tab>Offered</Tab>
+            <Tab>offered</Tab>
             <Tab>Salad</Tab>
             <Tab>pizza</Tab>
             <Tab>soup</Tab>

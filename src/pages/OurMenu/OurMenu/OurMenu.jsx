@@ -18,7 +18,7 @@ const OurMenu = () => {
   const salad = menu.filter((everyOffer) => everyOffer?.category === "salad");
   const soup = menu.filter((everyOffer) => everyOffer?.category === "soup");
   const drinks = menu.filter((everyOffer) => everyOffer?.category === "drinks");
-  console.log(offered, dessert, pizza, salad, soup, drinks);
+  // console.log(offered, dessert, pizza, salad, soup, drinks);
   return (
     <>
       <Helmet>
@@ -40,7 +40,7 @@ const OurMenu = () => {
             heading="TODAY'S OFFER"
           ></SectionHeading>
           <div>
-            <SharedMenu items={offered}></SharedMenu>
+            <SharedMenu items={offered} category={"offered"}></SharedMenu>
           </div>
         </section>
         {/* desserts */}
@@ -51,7 +51,7 @@ const OurMenu = () => {
             coverDesc="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           ></Cover>
           <div className="mt-24">
-            <SharedMenu items={dessert}></SharedMenu>
+            <SharedMenu items={dessert} category={"dessert"}></SharedMenu>
           </div>
         </section>
         {/* pizza */}
@@ -62,7 +62,7 @@ const OurMenu = () => {
             coverDesc="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           ></Cover>
           <div className="mt-24">
-            <SharedMenu items={pizza}></SharedMenu>
+            <SharedMenu items={pizza} category={"pizza"}></SharedMenu>
           </div>
         </section>
         {/* salad */}
@@ -73,7 +73,7 @@ const OurMenu = () => {
             coverDesc="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           ></Cover>
           <div className="mt-24">
-            <SharedMenu items={salad}></SharedMenu>
+            <SharedMenu items={salad} category={"salad"}></SharedMenu>
           </div>
         </section>
         {/* salad */}
@@ -84,7 +84,7 @@ const OurMenu = () => {
             coverDesc="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           ></Cover>
           <div className="mt-24">
-            <SharedMenu items={soup}></SharedMenu>
+            <SharedMenu items={soup} category={"soup"}></SharedMenu>
           </div>
         </section>
         {/* drinks */}
@@ -95,7 +95,7 @@ const OurMenu = () => {
             coverDesc="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
           ></Cover>
           <div className="mt-24">
-            <SharedMenu items={drinks}></SharedMenu>
+            <SharedMenu items={drinks} category={"drinks"}></SharedMenu>
           </div>
         </section>
       </main>

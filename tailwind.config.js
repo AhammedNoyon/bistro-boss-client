@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         serviceBg: "url('/src/assets/assets/home/chef-service.jpg')",
         featuredBg: "url('/src/assets/assets/home/featured.jpg')",
+        loginRegisterBg: "url('/src/assets/assets/others/authentication.png')",
       },
     },
     dropShadow: {
